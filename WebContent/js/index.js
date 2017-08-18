@@ -1,8 +1,7 @@
 /**
  * 
  */
-function slide()
-{
+$(document).ready(function(){
 	$.ajax({
 		type : 'get',
 		url : 'slide',
@@ -32,4 +31,8 @@ function slide()
 			
 		}
 	});
+});
+function slide()
+{
+	
 	}
