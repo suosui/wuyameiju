@@ -6,11 +6,14 @@
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
 <html>
+
 <head>
 <base href="<%= basePath%>" />
-<meta charset="utf-8" />
 <title>乌鸦美剧</title>
+
 <meta charset="utf-8">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -25,16 +28,25 @@
 	media="screen">
 <link rel="stylesheet" href="css/touchTouch.css" type="text/css"
 	media="screen">
-<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css"
+<link rel="stylesheet" href="css/jquery.kwicks.css" type="text/css"
 	media="screen">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
 	rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery.js"></script>
+
+<link rel='stylesheet' type='text/css' href='css/jquery.kwicks.css' />
+<link rel='stylesheet' type='text/css' href='css/kwicks-slider..css' />
+
+<script src='js/jquery-1.8.1.min.js' type='text/javascript'></script>
+<script src='js/jquery.kwicks.js' type='text/javascript'></script> 
 <script type="text/javascript" src="js/superfish.js"></script>
 <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+
+
 <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
 
 <script>		
@@ -63,7 +75,21 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
   <![endif]-->
-<title>Insert title here</title>
+  <style type='text/css'>
+			.kwicks {
+				width: (window).width();
+				height: 300px;
+			}
+			.kwicks > li {
+				height: 300px;
+				background: url(../img/loader.gif) center center no-repeat;
+				/* overridden by kwicks but good for when JavaScript is disabled */
+				margin-left: 5px;
+				margin-top: 5px;
+				float: left;
+			}
+		</style>
+<title>首页</title>
 
 </head>
 
@@ -75,24 +101,22 @@
 				<div class="span12">
 					<!--============================== slider =================================-->
 					<div class="flexslider">
-						<ul id="slide" class="slides">
-							
-							
-						</ul>
+						<ul class='kwicks kwicks-horizontal'>
+			             <li id="l0" class='kwicks-selected'></li>
+			             <li id="l1" class='kwicks-selected'></li>
+			             <li id="l2" class='kwicks-selected'></li>
+			             <li id="l3"class='kwicks-selected'></li>
+			             <li id="l4"class='kwicks-selected'></li>
+		               </ul>
+						
 					</div>
 					<span id="responsiveFlag"></span>
 					<div class="block-slogan">
-						<h2>Welcome!</h2>
+						<h2>美剧放送</h2>
 						<div>
 							<p>
 								<a href="https://www.wuyameiju.com/ " target="_blank"
-									class="link-1">Click here</a> for more info about this free
-								website template created by TemplateMonster.com. This is a
-								Bootstrap template that goes with several layout options (for
-								desktop, tablet, smartphone landscape and portrait) to fit all
-								popular screen resolutions. The PSD source files of this
-								template are available for free for the registered members of
-								TemplateMonster.com. Feel free to get them!
+									class="link-1">想看更多</a> 这里有你想看的美剧！这里有你想要的内容！
 							</p>
 						</div>
 					</div>
@@ -222,6 +246,6 @@
 		</div>
 	</div>
 	<jsp:include page="footer.jsp" />
-	<script type="text/javascript" src="js/index.js"></script>
+	
 </body>
 </html>

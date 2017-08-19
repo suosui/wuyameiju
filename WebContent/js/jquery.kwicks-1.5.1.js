@@ -9,7 +9,9 @@
 	Any and all use of this script must be accompanied by this copyright/license notice in its present form.
 */
 
+
 (function($){
+	
 	$.fn.kwicks = function(options) {
 		var defaults = {
 			isVertical: false,
@@ -22,11 +24,14 @@
 		var o = $.extend(defaults, options);
 		var WoH = (o.isVertical ? 'height' : 'width'); // WoH = Width or Height
 		var LoT = (o.isVertical ? 'top' : 'left'); // LoT = Left or Top
-		
+		console.log(WoH);
 		return this.each(function() {
 			container = $(this);
-			var kwicks = container.children('li');
+			var kwicks = container.children('li');	
+			console.log(kwicks[0]);
 			var normWoH = kwicks.eq(0).css(WoH).replace(/px/,''); // normWoH = Normal Width or Height
+			console.log(kwicks.eq(0));
+			console.log(kwicks.eq(0).css(WoH));
 			if(!o.max) {
 				o.max = (normWoH * kwicks.size()) - (o.min * (kwicks.size() - 1));
 			} else {

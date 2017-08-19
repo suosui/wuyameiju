@@ -127,7 +127,7 @@ public class videoDaoImpl implements videoDao{
 	@SuppressWarnings("rawtypes")
 	public List<imgMd> selectTop5Img()
 	{
-		String sql = "select video.idVideo, video.imgsrc from wuyameiju1.video  ORDER BY video.date DESC limit 5";
+		String sql = "select video.idVideo, video.imgsrc from wuyameiju1.video where userphone='18844141934' ORDER BY video.date DESC limit 5";
 		 
 		List<imgMd> mds = new ArrayList<imgMd>();
 		

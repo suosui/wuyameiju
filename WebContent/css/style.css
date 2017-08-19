@@ -1400,3 +1400,15 @@ footer {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.kwicks {
+				width: (window).width();
+				height: 300px;
+			}
+			.kwicks > li {
+				height: 300px;
+				background: url(../img/loader.gif) center center no-repeat;
+				/* overridden by kwicks but good for when JavaScript is disabled */
+				margin-left: 5px;
+				margin-top: 5px;
+				float: left;
+			}

@@ -27,7 +27,7 @@ public class Test
 	@RequestMapping("/test")
 	public String test()
 	{
-		return "video/myVideo";
+		return "test";
 	}
 	
   

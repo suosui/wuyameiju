@@ -26,6 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	media="screen">
 <link rel="stylesheet" href="css/kwicks-slider.css" type="text/css"
 	media="screen">
+	
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
 	rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -60,12 +61,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
   <![endif]-->
-<title>Insert title here</title>
+
+        
+		
+		
 </head>
 
 <body>
-	<jsp:include page="header.jsp" />
-	<img alt="" src="${fileUrl }" />  
-		<jsp:include page="footer.jsp" />
+	
 </body>
 </html>
