@@ -38,3 +38,16 @@ $(document).ready(function() {
 			  },"json");
 	
 });
+$(document).click(function (e) 
+		{ 
+	     var cls = $(e.target).attr('class'); 
+	     if(cls=="rederict")
+		     {
+	    	 window.location.href = e.target.innerHTML;
+	    	  
+		     }
+	         
+	} )
+
+
+

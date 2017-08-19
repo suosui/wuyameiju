@@ -34,7 +34,7 @@
 	rel='stylesheet' type='text/css'>
 
 <link rel='stylesheet' type='text/css' href='css/jquery.kwicks.css' />
-<link rel='stylesheet' type='text/css' href='css/kwicks-slider..css' />
+<link rel='stylesheet' type='text/css' href='css/kwicks-slider.css' />
 
 <script src='js/jquery-1.8.1.min.js' type='text/javascript'></script>
 <script src='js/jquery.kwicks.js' type='text/javascript'></script> 
@@ -45,7 +45,7 @@
 <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
-
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
 
@@ -100,7 +100,7 @@
 			<div class="row">
 				<div class="span12">
 					<!--============================== slider =================================-->
-					<div class="flexslider">
+					<div >
 						<ul class='kwicks kwicks-horizontal'>
 			             <li id="l0" class='kwicks-selected'></li>
 			             <li id="l1" class='kwicks-selected'></li>

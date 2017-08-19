@@ -7,6 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <base href="<%= basePath%>" />
 <meta charset="utf-8" />
 <title>Insert title here</title>
@@ -26,6 +27,6 @@
 		</div>
 	</div>
 	</footer>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
 </body>
 </html>
