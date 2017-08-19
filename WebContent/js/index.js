@@ -13,7 +13,7 @@ $(function() {
 $(document).ready(function() {
 	$.ajax({
 		type : 'get',
-		url : 'slide',
+		url : 'slide.do',
 		dataType : 'json',
 
 		success : function(jsons) {
@@ -21,8 +21,8 @@ $(document).ready(function() {
 
 				$.each(jsons, function(i, items) { //遍历获取数据
 
-					li = $('<li>');
-					li.append($(' <img src="' + items.imgsrc + '" style="width: 100%" alt="">'));
+					li = $(' <img id="'+items.idVideo+'" src="' + items.imgsrc + '"  alt="">');
+					//li.append($(' <img src="' + items.imgsrc + '" onclick="view()" style="width: 100%" alt="">'));
 				
 					$('#l'+i+'').append(li);
 
@@ -41,3 +41,15 @@ $(document).ready(function() {
 		}
 	});
 });
+
+$(document).click(function (e) 
+		{ 
+	     var id = $(e.target).attr('id'); 
+	     var src = $(e.target).attr('src');
+	     if(src)
+		     {
+	    	 window.location.href = "view/jsp.do?id="+id;
+	    	  
+		     }
+	         
+	} )

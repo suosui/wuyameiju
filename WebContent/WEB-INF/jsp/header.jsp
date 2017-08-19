@@ -18,7 +18,7 @@
 				<div class="navbar navbar_">
 					<div class="container">
 						<h1 class="brand brand_">
-							<a href="index"><img alt=""
+							<a href="index.do"><img alt=""
 								src="img/logo.gif"> </a>
 						</h1>
 						<a class="btn btn-navbar btn-navbar_" data-toggle="collapse"

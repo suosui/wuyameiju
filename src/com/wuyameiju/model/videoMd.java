@@ -8,6 +8,14 @@ public class videoMd {
 	private String videoname;
 	private Date date;
 	private String link;
+	private String imgsrc;
+	
+	public String getImgsrc() {
+		return imgsrc;
+	}
+	public void setImgsrc(String imgsrc) {
+		this.imgsrc = imgsrc;
+	}
 	public int getIdVideo() {
 		return idVideo;
 	}

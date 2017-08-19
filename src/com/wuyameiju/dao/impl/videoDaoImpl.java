@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 
@@ -25,12 +26,13 @@ import com.wuyameiju.dao.videoDao;
 import com.wuyameiju.entity.video;
 import com.wuyameiju.model.imgMd;
 import com.wuyameiju.model.videoMd;
+
+
 @Repository("VideoDaoImpl")
 public class videoDaoImpl implements videoDao{
 	@Autowired
     private JdbcTemplate jdbcTemplate;
 	
-	@Override
 	public Integer save(video entity) {
 		// TODO Auto-generated method stub
 		String sql = "insert into video(idvideo,userphone,videoname,date,imgsrc,link,linkpass) VALUES(default,?,?,default,?,?,?)";
@@ -53,11 +55,7 @@ public class videoDaoImpl implements videoDao{
 		return autoIncId;
 	}
 
-	@Override
-	public boolean delete(video entity) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 
 	@Override
 	public boolean deleteById(Integer id) {
@@ -65,35 +63,7 @@ public class videoDaoImpl implements videoDao{
 		return false;
 	}
 
-	@Override
-	public boolean update(video entity) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-	@Override
-	public video findById(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<video> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public PageBean<video> findByPage(int page, int size) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public PageBean<video> findByPage(QueryBean queryBean, int page, int size) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public videoMd addVideo() {
@@ -142,6 +112,61 @@ public class videoDaoImpl implements videoDao{
 		return mds;
 
 		
+	}
+
+	@Override
+	public Integer save(videoMd entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(videoMd entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(videoMd entity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public videoMd findById(Integer id) 
+	{
+		videoMd md=null;
+		String sql="select video.idVideo,video.date,video.link,video.videoname,video.imgsrc from wuyameiju1.video where video.idVideo="+id;
+		List<videoMd> videoMdList = jdbcTemplate.query(sql, new Object[]{}, new BeanPropertyRowMapper<videoMd>(videoMd.class));
+		if(null!=videoMdList&&videoMdList.size()>0){
+		     md = videoMdList.get(0);
+		}
+	   return md;	
+	}
+    
+	
+
+
+	@Override
+	public List<videoMd> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public PageBean<videoMd> findByPage(int page, int size) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public PageBean<videoMd> findByPage(QueryBean queryBean, int page, int size) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

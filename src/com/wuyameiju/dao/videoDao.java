@@ -3,10 +3,10 @@ package com.wuyameiju.dao;
 import java.util.List;
 
 
-import com.wuyameiju.entity.video;
+
 import com.wuyameiju.model.videoMd;
 
-public interface videoDao extends BaseDao<video, Integer>
+public interface videoDao extends BaseDao<videoMd, Integer>
 {
 
 	public videoMd addVideo();

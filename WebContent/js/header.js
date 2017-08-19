@@ -22,12 +22,12 @@ function Blog()
 		{
 		    if(pass != null && pass != "")
 		    	{
-		    	 window.location="Blog";
+		    	 window.location="Blog.do";
 		    	}
 		    else
 		    	{
 		    	alert("请先登录");
-			    window.location="Login";
+			    window.location="Login.do";
 		    	}
 		    
 		   

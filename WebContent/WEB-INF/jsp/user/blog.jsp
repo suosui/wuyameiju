@@ -103,7 +103,7 @@
                                 <div class="error"></div>
                                 <div class="form uploadBox">
                                 
-                                    <form id="form1" action="AddVideo"  method="post" enctype="multipart/form-data" >
+                                    <form id="form1" action="AddVideo.do"  method="post" enctype="multipart/form-data" >
                                     <input  class="input" type="text" placeholder="资源名称" name="videoname">
                                     <input  class="input" type="text" placeholder="资源链接" name="link">
                                     <input  class="input" type="text" placeholder="链接密码" name="linkpass">
@@ -130,7 +130,7 @@
 		
 <jsp:include page="../footer.jsp" />
 <script type="text/javascript" src="js/jquery.form.js"></script>
-<script type="text/javascript" src="js/upload.js"></script>
+<script type="text/javascript" src="js/blog.js"></script>
 
 </body>
 

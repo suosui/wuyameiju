@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +34,7 @@ public class VideoController {
 	@Qualifier("VideoServiceImpl")
 	private videoServiceImpl videoServiceImpl;
    
-	@RequestMapping("/AddVideo")
+	@RequestMapping("/AddVideo.do")
 	public @ResponseBody videoMd AddVideoService(@RequestParam(value = "file", required = false) MultipartFile _file,video _video,HttpServletRequest request)
 			throws SQLException, IllegalStateException, IOException {
 		
@@ -63,22 +64,32 @@ public class VideoController {
 		return videoServiceImpl.addVideo(_video);
 	}
 	
-	@RequestMapping("/MyVideo")
+	@RequestMapping("/MyVideo.do")
 	public @ResponseBody List<videoMd> MyVideo(String phone)
 	{
 		return videoServiceImpl.findByPhone(phone);
 	}
-	@RequestMapping("/showMyVideo")
+	@RequestMapping("/showMyVideo.do")
 	public String  ShowMyVideo()
 	{
 		
 		return "video/myVideo";
 	}
 	
-	@RequestMapping("slide")
+	@RequestMapping("/slide.do")
 	public @ResponseBody List<imgMd> slide()
 	{
 		
 		return videoServiceImpl.selectTop5Img();
+	}
+	@RequestMapping("/view.do")
+	public @ResponseBody videoMd  View(Integer idVideo)
+	{
+		return videoServiceImpl.view(idVideo);
+	}
+	@RequestMapping("/view/jsp.do")
+	public String  Redirect(Integer idVideo)
+	{
+		return "video";
 	}
 }

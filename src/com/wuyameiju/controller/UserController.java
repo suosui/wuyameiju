@@ -26,31 +26,31 @@ public class UserController
     @Qualifier("UserServiceImpl")
     private userServiceImpl userServiceImpl;
     
-    @RequestMapping(value="/AddUser",method=RequestMethod.POST)
+    @RequestMapping(value="/AddUser.do",method=RequestMethod.POST)
     public @ResponseBody userMd AddUserService(user _user)
     {
     	   
     		return userServiceImpl.addUser(_user);
     }
     
-    @RequestMapping("/Register")
+    @RequestMapping("/Register.do")
     public  String Register()
     {
 		return "user/register";
     }
     
-    @RequestMapping("/Login")
+    @RequestMapping("/Login.do")
     public  String Login()
     {
 		return "user/login";
     }
     
-    @RequestMapping("/Blog")
+    @RequestMapping("/Blog.do")
     public String Blog()
     {
     	return "user/blog";
     }
-    @RequestMapping(value="/GetPass",method=RequestMethod.POST)
+    @RequestMapping(value="/GetPass.do",method=RequestMethod.POST)
     public @ResponseBody passMd GetPassService(String phone)
     {
     	return userServiceImpl.getPass(phone);

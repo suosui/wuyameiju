@@ -92,7 +92,7 @@ function shakeModal(){
 function MyVideo()
 {
 	
-	window.location='showMyVideo';
+	window.location='showMyVideo.do';
 	return false;
 }
 

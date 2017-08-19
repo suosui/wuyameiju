@@ -6,7 +6,7 @@ function check(userphone,pass)
 		if(userphone==null||pass==null)
 		{
 		   alert("请先登录！");
-		   window.location ='Login';
+		   window.location ='Login.do';
 		}
 	}
 function showvideo() {
@@ -15,7 +15,7 @@ function showvideo() {
 			check(userphone,pass);
 		$.ajax({
 						type : 'get',
-						url : 'MyVideo',
+						url : 'MyVideo.do',
 						data : {
 							'phone' : userphone
 						},

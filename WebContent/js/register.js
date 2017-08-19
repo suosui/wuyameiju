@@ -96,7 +96,7 @@ function Post() {
 function AddUser() {
 	$.ajax({
 		type : 'post',
-		url : 'AddUser',
+		url : 'AddUser.do',
 		data : {
 			'phone' : ele.phone.value,
 			'password' : Encrypt(ele.password.value)
@@ -107,7 +107,7 @@ function AddUser() {
 				window.alert(obj.phone + ":注册成功！");
 				setCookie('phone', obj.phone, 30)
 				setCookie('p',obj.password, 30)
-				window.location = 'Login';
+				window.location = 'Login.do';
 			} else if (obj.phone == 0) {
 				alert("用户已存在！");
 			} else {

@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.DataAccessException;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -50,5 +51,10 @@ public class videoServiceImpl implements videoService {
 	public List<imgMd> selectTop5Img()
 	{
 		return videoDao.selectTop5Img();
+	}
+	@Transactional(readOnly = true, rollbackFor = DataAccessException.class)
+	public videoMd view(Integer id)
+	{
+		return videoDao.findById(id);
 	}
 }
