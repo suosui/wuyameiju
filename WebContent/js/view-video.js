@@ -32,7 +32,6 @@ $(document).ready(function() {
 						ul.append($('<li>' + json.videoname + '</li>'));
 						ul.append($('<li>' + json.date + '</li>'));
 						ul.append($('<li><a class="rederict">' + json.link + '</a></li>'));
-						
 						ul.append($('<img src="'+json.imgsrc+'"></img>'));
 						$('.span13').append(ul);
 				   }

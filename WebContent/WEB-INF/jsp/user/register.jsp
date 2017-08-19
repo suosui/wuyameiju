@@ -75,7 +75,7 @@
 									<a class="btn btn-1" href="javascript:void(0);"  onclick="Reset()">重置</a> <a
 										class="btn btn-1" href="javascript:void(0);"
 										onclick="Post()">提交</a> 
-								    <a class="redirect"  href="Login">登录</a>
+								    <a class="redirect"  href="Login.do">登录</a>
 								</div>
                                
 

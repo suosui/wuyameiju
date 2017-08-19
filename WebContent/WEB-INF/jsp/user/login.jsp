@@ -40,7 +40,7 @@
 		<!--============================== content =================================-->
 		<div id="content">
 			<div class="ic">
-				更多细节 <a href="index">乌鸦美剧</a>
+				更多细节 <a href="index.do">乌鸦美剧</a>
 			</div>
 			<div class="container">
 				<div class="row">
@@ -66,7 +66,7 @@
 								<div class="buttons-wrapper">
 									<a class="btn btn-1" href="javascript:void(0);" onclick="Reset()">重置</a> <a
 										class="btn btn-1" href="javascript:void(0);" onclick="Post()">登录</a>
-										<a class="redirect"  href="Register">注册</a>
+										<a class="redirect"  href="Register.do">注册</a>
 									
 								</div>
 

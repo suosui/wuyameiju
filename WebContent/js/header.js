@@ -35,7 +35,7 @@ function Blog()
 	else
 		{
 		alert("请先登录");
-		window.location="Login";
+		window.location="Login.do";
 		}
 	
 	}

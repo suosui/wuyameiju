@@ -26,7 +26,7 @@
 						</a>
 						<div class="nav-collapse nav-collapse_  collapse">
 							<ul class="nav sf-menu">
-								<li class="active"><a href="index">首页</a></li>
+								<li class="active"><a href="index.do">首页</a></li>
 								<li class="sub-menu"><a href="#">排行榜</a>
 									<ul>
 										<li><a href="#">综合播放 </a></li>
@@ -37,8 +37,8 @@
 								<li><a href="#">搜索</a></li>
 								<li><a id="nameDisplay" href="javascript:void();" onclick="Blog()">登/注</a>
 									<ul>
-										<li><a id="log" href="Login">登录 </a></li>
-										<li><a id="regis" href="Register">注册</a></li>
+										<li><a id="log" href="Login.do">登录 </a></li>
+										<li><a id="regis" href="Register.do">注册</a></li>
 										<li><a id="in" href="#">Sigin</a></li>
 										<li><a id="out" href="#" onclick="Out()">Sigout</a></li>
 										

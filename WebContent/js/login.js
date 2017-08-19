@@ -91,7 +91,7 @@ function Reset()
 function GetPass() {
 	$.ajax({
 		type : 'post',
-		url : 'GetPass',
+		url : 'GetPass.do',
 		data : {
 			'phone' : ele.phone.value
 		},
@@ -101,7 +101,7 @@ function GetPass() {
 				alert("登录成功！");
 				setCookie('phone', obj.phone, 30);
 				setCookie('p',obj.password,30);
-				window.location = 'index';
+				window.location = 'index.do';
 			} else if (obj.password == 'error') {
 				alert("用户不存在，请先注册！");
 			} else if($('#password').val() != Decrypt(obj.password)){
@@ -114,7 +114,7 @@ function GetPass() {
 				alert("出错啦！");
 				
 		
-			// window.location = 'test'
+			
 		}
 	});
 }
