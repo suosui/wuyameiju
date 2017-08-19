@@ -78,10 +78,10 @@
   <style type='text/css'>
 			.kwicks {
 				width: (window).width();
-				height: 300px;
+				height: 320px;
 			}
 			.kwicks > li {
-				height: 300px;
+				height: 320px;
 				background: url(../img/loader.gif) center center no-repeat;
 				/* overridden by kwicks but good for when JavaScript is disabled */
 				margin-left: 5px;
