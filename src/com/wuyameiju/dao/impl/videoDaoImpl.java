@@ -25,6 +25,7 @@ import com.wuyameiju.beans.QueryBean;
 import com.wuyameiju.dao.videoDao;
 import com.wuyameiju.entity.video;
 import com.wuyameiju.model.imgMd;
+import com.wuyameiju.model.linkPMd;
 import com.wuyameiju.model.videoMd;
 
 
@@ -62,7 +63,19 @@ public class videoDaoImpl implements videoDao{
 		// TODO Auto-generated method stub
 		return false;
 	}
-
+    
+	
+	
+	public linkPMd findPassById(Integer id) {
+		// TODO Auto-generated method stub
+		linkPMd md=null;
+		String sql="select video.idVideo,video.linkpass from wuyameiju1.video where video.idVideo="+id;
+		List<linkPMd> videoMdList = jdbcTemplate.query(sql, new Object[]{}, new BeanPropertyRowMapper<linkPMd>(linkPMd.class));
+		if(null!=videoMdList&&videoMdList.size()>0){
+		     md = videoMdList.get(0);
+		}
+	   return md;
+	}
 
 
 	@Override
@@ -168,6 +181,10 @@ public class videoDaoImpl implements videoDao{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+
+	
 
 	
 

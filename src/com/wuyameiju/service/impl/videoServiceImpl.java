@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.wuyameiju.dao.impl.videoDaoImpl;
 import com.wuyameiju.entity.video;
 import com.wuyameiju.model.imgMd;
+import com.wuyameiju.model.linkPMd;
 import com.wuyameiju.model.videoMd;
 import com.wuyameiju.service.videoService;
 @Service("VideoServiceImpl")
@@ -46,6 +47,11 @@ public class videoServiceImpl implements videoService {
 		return videoDao.findByphone(phone);
 	}
 	
+	@Transactional(readOnly = true, rollbackFor = DataAccessException.class)
+	public linkPMd findPassById(Integer id)
+	{
+		return videoDao.findPassById(id);
+	}
 	
 	@Transactional(readOnly = true, rollbackFor = DataAccessException.class)
 	public List<imgMd> selectTop5Img()

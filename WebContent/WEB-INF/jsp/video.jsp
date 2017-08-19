@@ -42,6 +42,7 @@
 <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
 
 <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
+<script type="text/javascript" src="js/register.js"></script>
 <script type="text/javascript" src="js/view-video.js"></script>
 <script>		
 		 jQuery(window).load(function() {

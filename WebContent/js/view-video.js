@@ -27,12 +27,16 @@ $(document).ready(function() {
 			  function(json){
 			   if(json)
 				   {
+				   setCookie(setCookie('vid', json.idVideo, 1));
 				        var ul = $('<ul>');
-				        ul.append($('<li>' + json.idVideo + '</li>'));
+				        ul.append($('<li class="id">' + json.idVideo + '</li>'));
 						ul.append($('<li>' + json.videoname + '</li>'));
 						ul.append($('<li>' + json.date + '</li>'));
-						ul.append($('<li><a class="rederict">' + json.link + '</a></li>'));
+						
 						ul.append($('<img src="'+json.imgsrc+'"></img>'));
+						ul.append($('<li><a class="rederict">' + json.link + '</a></li>'));
+						ul.append($('<div><li><a class="pass">密码:</a><a class="display"></a></li><div>'));
+						
 						$('.span13').append(ul);
 				   }
 			  },"json");
@@ -43,9 +47,45 @@ $(document).click(function (e)
 	     var cls = $(e.target).attr('class'); 
 	     if(cls=="rederict")
 		     {
+
 	    	 window.location.href = e.target.innerHTML;
 	    	  
 		     }
+	         
+	} )
+	
+	
+	
+$(document).click(function (e) 
+		{ 
+	     var cls = $(e.target).attr('class'); 
+	     var p = getCookie('p');
+	     
+	     if(cls=="pass"&& p!=null)
+		     {
+	    	 
+	    	
+	    	 var id = getCookie('vid');
+	    	 
+	    	  
+	    	   $.get("getLinkPass.do",{"idVideo":id},
+	            function(json){
+	    		   if (json) {
+	    			   var ul = $('<ul>');
+				        
+					   ul.append($('<div><li>'+json.linkpass+'</li><div>'));
+						
+						$('.span13').append(ul);
+
+    				} else {
+    					window.alert("密码获取失败!");
+    					
+    				}
+	    				  },"json");
+	    	  
+		     }
+	    
+	     
 	         
 	} )
 

@@ -24,6 +24,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.wuyameiju.common.CookieUtil;
 import com.wuyameiju.entity.video;
 import com.wuyameiju.model.imgMd;
+import com.wuyameiju.model.linkPMd;
 import com.wuyameiju.model.videoMd;
 import com.wuyameiju.service.impl.videoServiceImpl;
 
@@ -92,4 +93,12 @@ public class VideoController {
 	{
 		return "video";
 	}
+	
+	@RequestMapping("/getLinkPass.do")
+	public @ResponseBody linkPMd  getLinkPass(Integer idVideo)
+	{
+		return videoServiceImpl.findPassById(idVideo);
+	}
+	
+	
 }
