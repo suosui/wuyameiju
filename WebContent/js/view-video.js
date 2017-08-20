@@ -59,32 +59,61 @@ $(document).click(function (e)
 $(document).click(function (e) 
 		{ 
 	     var cls = $(e.target).attr('class'); 
+	     var phone = getCookie('phone');
 	     var p = getCookie('p');
-	     
-	     if(cls=="pass"&& p!=null)
-		     {
-	    	 
-	    	
-	    	 var id = getCookie('vid');
-	    	 
-	    	  
-	    	   $.get("getLinkPass.do",{"idVideo":id},
-	            function(json){
-	    		   if (json) {
-	    			   var ul = $('<ul>');
-				        
-					   ul.append($('<div><li>'+json.linkpass+'</li><div>'));
-						
-						$('.span13').append(ul);
+	     if(p)
+	    	 {
+	    	 if(cls=="pass")
+	    		 {
+	    		 $.ajax({
+	 	 	 		type : 'post',
+	 	 	 		url : 'GetPass.do',
+	 	 	 		data : {
+	 	 	 			'phone' : phone
+	 	 	 		},
+	 	 	 		datatype : "json",
+	 	 	 		success : function(obj) {
+	 	 	 			if (p == obj.password) {
+	 	 	 				 var id = getCookie('vid');
+	 	 	 				 $.get("getLinkPass.do",{"idVideo":id},
+	 	 	 			            function(json){
+	 	 	 			    		   if (json) {
+	 	 	 			    			   var ul = $('<ul>');
+	 	 	 						        
+	 	 	 							   ul.append($('<div><li>'+json.linkpass+'</li><div>'));
+	 	 	 								
+	 	 	 								$('.span13').append(ul);
 
-    				} else {
-    					window.alert("密码获取失败!");
-    					
-    				}
-	    				  },"json");
-	    	  
-		     }
+	 	 	 		    				} else {
+	 	 	 		    					window.alert("密码获取失败!");
+	 	 	 		    					
+	 	 	 		    				}
+	 	 	 			    				  },"json");
+	 	 	 				
+	 	 	 			} else if (obj.password == 'error') {
+	 	 	 				alert("用户不存在，请先注册！");
+	 	 	 			} else if(p != obj.password){
+	 	 	 			
+	 	 	 				alert("密码错误！请先登录！");
+	 	 	 				window.location="Login.do";
+	 	 	 			}
+	 	 	 		},
+	 	 	 		error : function(obj) {
+	 	 	 				alert("出错啦！");
+	 	 	 			
+	 	 	 		}
+	 	 	 	});
+	    		 }
+	    	
+	    	 }
+	     else
+	    	 {
+	    	     alert("请先登录！");
+	    	     window.location="Login.do";
+	    	 }
 	    
+	     
+	     
 	     
 	         
 	} )

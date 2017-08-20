@@ -75,20 +75,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
   <![endif]-->
-  <style type='text/css'>
-			.kwicks {
-				width: (window).width();
-				height: 320px;
-			}
-			.kwicks > li {
-				height: 320px;
-				background: url(../img/loader.gif) center center no-repeat;
-				/* overridden by kwicks but good for when JavaScript is disabled */
-				margin-left: 5px;
-				margin-top: 5px;
-				float: left;
-			}
-		</style>
+  
 <title>首页</title>
 
 </head>
@@ -102,7 +89,7 @@
 					<!--============================== slider =================================-->
 					<div >
 						<ul class='kwicks kwicks-horizontal'>
-			             <li id="l0" class='kwicks-selected'></li>
+			             <li id="l0" class='kwicks-seleted'></li>
 			             <li id="l1" class='kwicks-selected'></li>
 			             <li id="l2" class='kwicks-selected'></li>
 			             <li id="l3"class='kwicks-selected'></li>
