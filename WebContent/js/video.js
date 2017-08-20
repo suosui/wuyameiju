@@ -33,21 +33,11 @@ function showvideo() {
 										tr.append($('<td>' + items.link + '</td>'));
 										tr.append($('<td>' + items.date + '</td>'));
 										
-										tr.append($('<td><button class="btn btn-info" onclick="delRoom('+items.idVideo+', this)">删除</button></td>'));
-										tr.append($('<td><button class="btn btn-link" onclick="showRoom('+items.idVideo+', 1)">编辑</button> </td>'));
+										tr.append($('<td><button class="btn btn-1" onclick="deletVideo('+items.idVideo+', this)">删除</button></td>'));
+										tr.append($('<td><button class="rederict" onclick="showVideo('+items.idVideo+', 1)">编辑</button> </td>'));
 										
 										$('#myTab').append(tr);
-										//var $tr = $("<tr></tr>"); //表格的一行，在里面可以加各种属性;
-                                        //var $td = $("<td></td>"); //行中的元素
-						                //$tr.append($td.clone().text(items.idVideo)); //把数据填充到单元格中
-						                //$tr.append($td.clone().text(items.userphone));
-						                //$tr.append($td.clone().text(items.videoname));
-						                //$tr.append($td.clone().text(items.link));
-						                //$tr.append($td.clone().text(items.date));
-						                //$tr.append($('<td><button class="btn btn-info" onclick="delRoom('+$td.clone().text(items.idVideo)+', this)">删除</button></td>'));
-										//$tr.append($('<td><button class="btn btn-link" onclick="showRoom('+$td.clone().text(items.idVideo)+', 1)">查看</button> </td>'));
 										
-						                //$("#myTab").after($tr);//最后要把内容放入要绑定的地方
 						            });
 
 							} else {
@@ -62,3 +52,34 @@ function showvideo() {
 						}
 					});
 		}	
+
+
+
+
+
+function deletVideo(id, ele)
+{
+	if(confirm("确定删除此资源?")) {
+		$.ajax({
+			type: 'get',
+			url: 'deleteVideo.do',
+			data: {'idVideo': id},
+			dataType: 'json',
+			success: function(obj) {
+				if(obj.status==true) {
+					$(ele).parent().parent().remove();
+				}
+				else {
+					window.alert("删除失败!");
+				}
+			},
+			error : function(XMLHttpRequest, textStatus,
+					errorThrown) {
+
+				alert('返回失败！');
+				
+			}
+			
+		});
+	}
+	}

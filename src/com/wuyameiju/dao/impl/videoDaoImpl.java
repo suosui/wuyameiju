@@ -61,7 +61,16 @@ public class videoDaoImpl implements videoDao{
 	@Override
 	public boolean deleteById(Integer id) {
 		// TODO Auto-generated method stub
-		return false;
+		 int count = jdbcTemplate.update
+				("delete from wuyameiju1.video where idVideo=?",id);
+		 if(count==1)
+		 {
+			 return true;
+		 }
+		 else
+		 {
+			 return false;
+		 }
 	}
     
 	
@@ -136,8 +145,12 @@ public class videoDaoImpl implements videoDao{
 	@Override
 	public boolean delete(videoMd entity) {
 		// TODO Auto-generated method stub
+		
+       
 		return false;
 	}
+	
+	
 
 	@Override
 	public boolean update(videoMd entity) {

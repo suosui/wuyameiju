@@ -23,6 +23,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.wuyameiju.common.CookieUtil;
 import com.wuyameiju.entity.video;
+import com.wuyameiju.model.deleteVideoMd;
 import com.wuyameiju.model.imgMd;
 import com.wuyameiju.model.linkPMd;
 import com.wuyameiju.model.videoMd;
@@ -98,6 +99,14 @@ public class VideoController {
 	public @ResponseBody linkPMd  getLinkPass(Integer idVideo)
 	{
 		return videoServiceImpl.findPassById(idVideo);
+	}
+	
+	
+	
+	@RequestMapping("/deleteVideo.do")
+	public @ResponseBody deleteVideoMd  DeletVideo(Integer idVideo,HttpServletRequest request)
+	{
+		return videoServiceImpl.deleteById1(idVideo, request);
 	}
 	
 	
