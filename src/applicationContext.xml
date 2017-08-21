@@ -99,21 +99,6 @@
 		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<!-- 通过AOP配置提供事务增强，让service包下所有Bean的所有方法拥有事务 -->
 	<!--	配置通知	-->
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
@@ -147,7 +132,7 @@
 	
 	
 	
-	
+	<!-- 映射网页 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		id="internalResourceViewResolver">

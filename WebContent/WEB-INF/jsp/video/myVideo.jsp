@@ -12,8 +12,10 @@
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your keywords">
 <meta name="author" content="Your name">
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css"
+
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css"
 	media="screen">
+
 <link rel="stylesheet" href="css/responsive.css" type="text/css"
 	media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css"
@@ -25,8 +27,10 @@
 	media="screen">
 	<link rel="stylesheet" href="css/login-register.css" type="text/css"
 	media="screen">
+	
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
 	rel='stylesheet' type='text/css'>
+	
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/superfish.js"></script>
 <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
@@ -69,15 +73,48 @@
 				</tr>
 			</thead>
 
-
+ 
 		</table>
+		<div>
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h6 class="modal-title" id="myModalLabel">编辑资源</h6>
+					</div>
+					<div class="modal-body">
+					<div>
+						<label for="name">名称: </label>
+						<input type="text" id="name" placeholder="请输入资源名称..." />
+					</div>
+					<div>	
+						<label for="link">链接: </label>
+						<input type="text" id="link" placeholder="请输入资源链接..." />
+					</div>
+					<div>	
+						<label for="linkpass">链接密码: </label>
+						<input type="text" id="linkpass" placeholder="请输入链接密码..." />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-1" onclick="createClass()">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div>
 	</div>
+	
+	
 
 
 	<jsp:include page="../footer.jsp" />
 	<script type="text/javascript" src="js/video.js"></script>
-	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

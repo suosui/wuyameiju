@@ -4635,6 +4635,14 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 	padding: 9px 15px;
 	border-bottom: 1px solid #eee;
 }
+.modal-title
+{
+    	
+    	color: #a0a0a0;
+    	font-size: 14px;
+	    font-weight: normal;
+	    line-height: 18px;
+}
 
 .modal-header .close {
 	margin-top: 2px;
@@ -4647,7 +4655,8 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .modal-body {
 	overflow-y: auto;
-	max-height: 400px;
+	max-height: 100%;
+	max-width: 100%;
 	padding: 15px;
 }
 
