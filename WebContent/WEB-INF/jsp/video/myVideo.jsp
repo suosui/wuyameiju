@@ -97,7 +97,9 @@
 					<div>	
 						<label for="linkpass">链接密码: </label>
 						<input type="text" id="linkpass" placeholder="请输入链接密码..." />
-						</div>
+					</div>
+					
+					
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
