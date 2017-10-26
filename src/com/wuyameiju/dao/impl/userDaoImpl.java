@@ -21,7 +21,7 @@ import com.wuyameiju.entity.user;
 import com.wuyameiju.model.userMd;
 @Repository("UserDaoImpl")
 public class userDaoImpl  implements userDao  {
-	// @Autowire注释:按类型匹配(可以对类成员变量/方法以及构造函数进行标注,完成自动装配的工作)
+	
 	
 	
 	@Autowired
@@ -30,16 +30,18 @@ public class userDaoImpl  implements userDao  {
 	@Override
 	public Integer save(user entity) {
 		// TODO Auto-generated method stub
-		String sql = "insert into user(id,phone,password,date) VALUES(default,?,?,default)";
+		String sql = "insert into user(uid,uphone,uname,upass,uregisDate) VALUES(default,?,?,?,default)";
 		KeyHolder keyHolder = new GeneratedKeyHolder();  
 	      int autoIncId = 0;  
 		jdbcTemplate.update(new PreparedStatementCreator() {  
 	        public PreparedStatement createPreparedStatement(Connection con)  
 	                throws SQLException {  
-	            PreparedStatement ps = con.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS);  
-	            ps.setString(1,entity.getPhone()); 
-	            ps.setString(2, entity.getPassword());
-	            //ps.setString(2, (entity.getDate()).toString());
+	            PreparedStatement ps = con.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS); 
+	           
+	            ps.setString(1,entity.getUphone());	            
+	            ps.setString(2, entity.getUname());
+	            ps.setString(3, entity.getUpass());
+	           
 	            return ps;  
 	        }  
 	    }, keyHolder);  

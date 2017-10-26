@@ -28,9 +28,9 @@ public class userServiceImpl implements userService {
     	Integer id = userDao.save(_user);
     	if (id!=null) {
 			userMd.setId(id);
-			userMd.setPassword(_user.getPassword());
-	    	userMd.setDate(new Date());
-	        userMd.setPhone(_user.getPhone());
+			userMd.setPassword(_user.getUpass());
+	    	userMd.setDate(new Date());        
+	        userMd.setPhone(_user.getUphone());
 	    	
 		}
     	else
@@ -38,7 +38,7 @@ public class userServiceImpl implements userService {
     		userMd.setId(0);
 			userMd.setPassword("error");
 	    	userMd.setDate(new Date());
-	        userMd.setPhone("error");
+	        userMd.setPhone("-1");
     	}
     	return userMd;
     	

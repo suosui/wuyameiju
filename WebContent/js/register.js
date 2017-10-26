@@ -18,12 +18,17 @@ function removeClass(obj, cls) { //移除obj对应的class
 }
 var ele = { //存放各个input字段obj
 	phone : document.getElementById("phone"),
+	name : document.getElementById("name"),
 	password : document.getElementById("password1"),
 	R_password : document.getElementById("password2"),
 	spanphone2 : document.getElementById("spanphone2"),
 };
-ele.phone.onblur = function() { //name失去焦点则检测
+ele.phone.onblur = function() { //phone失去焦点则检测
 	checkPhone(ele.phone.value);
+
+}
+ele.name.onblur = function() { //name失去焦点则检测
+	checkName(ele.name.value);
 
 }
 ele.password.onblur = function() { //password失去焦点则检测
@@ -48,6 +53,18 @@ function checkPhone(phone) { //验证name
 	} else {
 		document.getElementById("spanphone1").style.display = "none";
 		document.getElementById("spanphone2").style.display = "none";
+		return true;
+	}
+}
+function checkName(name) { //验证用户名
+	if (name == "") {
+		document.getElementById("spanname").style.display = "";
+		return false;
+	}
+	 else { //用户名输入正确
+		
+		document.getElementById("spanname").style.display = "none";
+
 		return true;
 	}
 }
@@ -82,7 +99,7 @@ function Reset()
 	
 }
 function Post() {
-	if (checkPhone(ele.phone.value) && checkPassw1(ele.password.value, ele.R_password.value) && checkPassw2(ele.password.value, ele.R_password.value)) 
+	if (checkPhone(ele.phone.value)&&checkName(ele.name.value) && checkPassw1(ele.password.value, ele.R_password.value) && checkPassw2(ele.password.value, ele.R_password.value)) 
 	{
 		//alert("haha");
 		
@@ -98,8 +115,9 @@ function AddUser() {
 		type : 'post',
 		url : 'AddUser.do',
 		data : {
-			'phone' : ele.phone.value,
-			'password' : Encrypt(ele.password.value)
+			'uphone' : ele.phone.value,
+			'uname' : ele.name.value,
+			'upass' : Encrypt(ele.password.value)
 		},
 		datatype : "json",
 		success : function(obj) {
@@ -108,7 +126,7 @@ function AddUser() {
 				setCookie('phone', obj.phone, 30)
 				setCookie('p',obj.password, 30)
 				window.location = 'Login.do';
-			} else if (obj.phone == 0) {
+			} else if (obj.phone == '-1') {
 				alert("用户已存在！");
 			} else {
 				window.alert(obj.phone + "注册失败！！");
@@ -116,7 +134,7 @@ function AddUser() {
 
 		},
 		error : function() {
-			alert("用户已存在！");
+			alert("系统故障，请稍后重试！");
 			// window.location = 'test'
 		}
 

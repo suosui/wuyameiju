@@ -4,35 +4,41 @@ import java.util.Date;
 
 public class user 
 {
-	private int id;
-    private String phone;
-    private String password;
-    private Date date;
+	private int uid;
+    private String uphone;
+    private String uname;
+    private String upass;
+    private Date uregisDate;
+	public int getUid() {
+		return uid;
+	}
+	public void setUid(int uid) {
+		this.uid = uid;
+	}
+	public String getUphone() {
+		return uphone;
+	}
+	public void setUphone(String uphone) {
+		this.uphone = uphone;
+	}
+	public String getUname() {
+		return uname;
+	}
+	public void setUname(String uname) {
+		this.uname = uname;
+	}
+	public String getUpass() {
+		return upass;
+	}
+	public void setUpass(String upass) {
+		this.upass = upass;
+	}
+	public Date getUregisDate() {
+		return uregisDate;
+	}
+	public void setUregisDate(Date uregisDate) {
+		this.uregisDate = uregisDate;
+	}
     
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getPhone() {
-		return phone;
-	}
-	
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
 	
 }

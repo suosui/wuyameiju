@@ -23,7 +23,8 @@ import com.wuyameiju.model.linkPMd;
 import com.wuyameiju.model.videoMd;
 import com.wuyameiju.service.videoService;
 
-import javafx.scene.control.Alert;
+//import javafx.scene.control.Alert;
+
 @Service("VideoServiceImpl")
 public class videoServiceImpl implements videoService {
 	@Autowired

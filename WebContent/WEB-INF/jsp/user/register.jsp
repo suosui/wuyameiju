@@ -60,6 +60,12 @@
 									</label>
 								</div>
 								<div>
+									<label > <input id="name"
+										type="text" placeholder="用户名" value=""> <br> <span
+										id="spanname" style="display:none">*请输入用户名.</span>
+									</label>
+								</div>
+								<div>
 									<label > <input id="password1"
 										type="password" placeholder="密码" value=""> <br> <span
 										id="spanpass1" style="display:none">*请输入密码.</span>
