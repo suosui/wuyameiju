@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -19,7 +20,8 @@ import com.wuyameiju.entity.log;
 public class logDaoImpl implements logDao{
 
 	@Autowired
-    private JdbcTemplate jdbcTemplate;
+	@Qualifier("jdbcAppend")
+    private JdbcTemplate jdbcAppend;
 	
 	@Override
 	public Integer save(log entity) {
@@ -27,7 +29,7 @@ public class logDaoImpl implements logDao{
 		String sql = "insert into log(lid,description,method,requestIp,exceptionCode,createDate,createBy) VALUES(default,?,?,?,?,?,?)";
 		KeyHolder keyHolder = new GeneratedKeyHolder();  
 	      int autoIncId = 0;  
-		jdbcTemplate.update(new PreparedStatementCreator() {  
+	      jdbcAppend.update(new PreparedStatementCreator() {  
 	        public PreparedStatement createPreparedStatement(Connection con)  
 	                throws SQLException {  
 	            PreparedStatement ps = con.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS); 
