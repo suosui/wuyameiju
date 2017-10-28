@@ -7,6 +7,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.wuyameiju.annotation.SystemServiceLog;
 import com.wuyameiju.dao.impl.userDaoImpl;
 import com.wuyameiju.entity.user;
 import com.wuyameiju.model.passMd;
@@ -19,9 +20,10 @@ public class userServiceImpl implements userService {
     @Qualifier("UserDaoImpl")
     private userDaoImpl userDao;
 	
-   
+     
 	@Transactional(readOnly = false, rollbackFor = DataAccessException.class)
-    @Override
+	@SystemServiceLog(description = "添加用户") 
+	@Override
 	public userMd addUser(user _user)  {
 		// TODO Auto-generated method s
 		userMd userMd = new userMd();

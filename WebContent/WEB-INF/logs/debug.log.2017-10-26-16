@@ -1,0 +1,125 @@
+2017-10-26 16:00:00 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:187483] - [DEBUG] [ThreadPoolAsynchronousRunner:778] [run] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@72c3ae80 -- Running DeadlockDetector[Exiting. No pending tasks.]
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197483] - [DEBUG] [ThreadPoolAsynchronousRunner:778] [run] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@72c3ae80 -- Running DeadlockDetector[Exiting. No pending tasks.]
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197562] - [DEBUG] [BasicResourcePool:2118] [run] Refurbishing idle resources - Thu Oct 26 16:00:10 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@53b7cc30]
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197563] - [DEBUG] [ThreadPoolAsynchronousRunner:236] [postRunnable] com.mchange.v2.async.ThreadPoolAsynchronousRunner@6f2583c2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@44fe28a6
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197563] - [DEBUG] [ThreadPoolAsynchronousRunner:236] [postRunnable] com.mchange.v2.async.ThreadPoolAsynchronousRunner@6f2583c2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@314d39ad
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197564] - [DEBUG] [ThreadPoolAsynchronousRunner:236] [postRunnable] com.mchange.v2.async.ThreadPoolAsynchronousRunner@6f2583c2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@289f6efd
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197564] - [DEBUG] [ThreadPoolAsynchronousRunner:236] [postRunnable] com.mchange.v2.async.ThreadPoolAsynchronousRunner@6f2583c2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@2264289
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197564] - [DEBUG] [ThreadPoolAsynchronousRunner:236] [postRunnable] com.mchange.v2.async.ThreadPoolAsynchronousRunner@6f2583c2: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@37a8e173
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:197565] - [DEBUG] [BasicResourcePool:1751] [trace] trace com.mchange.v2.resourcepool.BasicResourcePool@53b7cc30 [managed: 5, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6)
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#0:197565] - [DEBUG] [C3P0PooledConnectionPool:448] [finerLoggingTestPooledConnection] Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6611c4dc] on IDLE CHECK.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#2:197566] - [DEBUG] [C3P0PooledConnectionPool:448] [finerLoggingTestPooledConnection] Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2b13fb79] on IDLE CHECK.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#0:197566] - [DEBUG] [C3P0PooledConnectionPool:452] [finerLoggingTestPooledConnection] Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6611c4dc] on IDLE CHECK has SUCCEEDED.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#1:197565] - [DEBUG] [C3P0PooledConnectionPool:448] [finerLoggingTestPooledConnection] Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6] on IDLE CHECK.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#0:197566] - [DEBUG] [C3P0PooledConnectionPool:448] [finerLoggingTestPooledConnection] Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4836e90f] on IDLE CHECK.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#2:197566] - [DEBUG] [C3P0PooledConnectionPool:452] [finerLoggingTestPooledConnection] Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2b13fb79] on IDLE CHECK has SUCCEEDED.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#0:197567] - [DEBUG] [C3P0PooledConnectionPool:452] [finerLoggingTestPooledConnection] Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4836e90f] on IDLE CHECK has SUCCEEDED.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#1:197567] - [DEBUG] [C3P0PooledConnectionPool:452] [finerLoggingTestPooledConnection] Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6] on IDLE CHECK has SUCCEEDED.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#2:197567] - [DEBUG] [C3P0PooledConnectionPool:448] [finerLoggingTestPooledConnection] Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3f1b5164] on IDLE CHECK.
+2017-10-26 16:00:10 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-HelperThread-#2:197568] - [DEBUG] [C3P0PooledConnectionPool:452] [finerLoggingTestPooledConnection] Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3f1b5164] on IDLE CHECK has SUCCEEDED.
+2017-10-26 16:00:20 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:207483] - [DEBUG] [ThreadPoolAsynchronousRunner:778] [run] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@72c3ae80 -- Running DeadlockDetector[Exiting. No pending tasks.]
+2017-10-26 16:00:30 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:217483] - [DEBUG] [ThreadPoolAsynchronousRunner:778] [run] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@72c3ae80 -- Running DeadlockDetector[Exiting. No pending tasks.]
+2017-10-26 16:00:40 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:227483] - [DEBUG] [ThreadPoolAsynchronousRunner:778] [run] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@72c3ae80 -- Running DeadlockDetector[Exiting. No pending tasks.]
+2017-10-26 16:00:50 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:237483] - [DEBUG] [ThreadPoolAsynchronousRunner:778] [run] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@72c3ae80 -- Running DeadlockDetector[Exiting. No pending tasks.]
+2017-10-26 16:01:00 [C3P0PooledConnectionPoolManager[identityToken->1oipz9e9robuosq7fb6f8|581424ce]-AdminTaskTimer:247483] - [DEBUG] [ThreadPoolAsynchronousRunner:778] [run] com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@72c3ae80 -- Running DeadlockDetector[Exiting. No pending tasks.]
+2017-10-26 16:01:03 [localhost-startStop-2:250336] - [INFO] [XmlWebApplicationContext:984] [doClose] Closing WebApplicationContext for namespace 'springmvc-servlet': startup date [Thu Oct 26 15:56:53 CST 2017]; root of context hierarchy
+2017-10-26 16:01:03 [localhost-startStop-2:250338] - [DEBUG] [DefaultListableBeanFactory:251] [doGetBean] Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-10-26 16:01:03 [localhost-startStop-2:250338] - [DEBUG] [DefaultListableBeanFactory:512] [destroySingletons] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@66a6a5f7: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,mvcCorsConfigurations,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,hello,indexController,test,userController,videoController,UserDaoImpl,VideoDaoImpl,UserServiceImpl,VideoServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,dataSource,jdbcTemplate,transactionManager,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,serviceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,internalResourceViewResolver,multipartResolver]; root of factory hierarchy
+2017-10-26 16:01:03 [localhost-startStop-2:250342] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean 'dataSource': [jdbcTemplate, transactionManager]
+2017-10-26 16:01:03 [localhost-startStop-2:250342] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean 'jdbcTemplate': [UserDaoImpl, VideoDaoImpl]
+2017-10-26 16:01:03 [localhost-startStop-2:250342] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean 'UserDaoImpl': [UserServiceImpl]
+2017-10-26 16:01:03 [localhost-startStop-2:250343] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean 'UserServiceImpl': [userController]
+2017-10-26 16:01:03 [localhost-startStop-2:250343] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean 'VideoDaoImpl': [VideoServiceImpl]
+2017-10-26 16:01:03 [localhost-startStop-2:250344] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean 'VideoServiceImpl': [videoController]
+2017-10-26 16:01:03 [localhost-startStop-2:250344] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean 'transactionManager': [txAdvice]
+2017-10-26 16:01:03 [localhost-startStop-2:250344] - [DEBUG] [DefaultListableBeanFactory:568] [destroyBean] Retrieved dependent beans for bean '(inner bean)#10592de4': [txAdvice]
+2017-10-26 16:01:03 [localhost-startStop-2:250345] - [DEBUG] [DisposableBeanAdapter:337] [invokeCustomDestroyMethod] Invoking destroy method 'close' on bean with name 'dataSource'
+2017-10-26 16:01:03 [localhost-startStop-2:250346] - [DEBUG] [ActiveManagementCoordinator:154] [attemptUnmanagePooledDataSource] MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1oipz9e9robuosq7fb6f8|581424ce,name=1oipz9e9robuosq7fb6f8|581424ce unregistered.
+2017-10-26 16:01:03 [localhost-startStop-2:250347] - [DEBUG] [ActiveManagementCoordinator:106] [attemptUnmanageC3P0Registry] C3P0Registry mbean unregistered.
+2017-10-26 16:01:03 [localhost-startStop-2:250347] - [DEBUG] [AbstractPoolBackedDataSource:477] [close] com.mchange.v2.c3p0.ComboPooledDataSource@581424ce has been closed. 
+java.lang.Exception: DEBUG STACK TRACE for PoolBackedDataSource.close().
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.close(AbstractPoolBackedDataSource.java:477)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:364)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:287)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1006)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958)
+	at org.springframework.web.servlet.FrameworkServlet.destroy(FrameworkServlet.java:829)
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1340)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1674)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5417)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1435)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1424)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250353] - [DEBUG] [BasicResourcePool:1022] [run] Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250354] - [DEBUG] [C3P0PooledConnectionPool:618] [destroyResource] Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250355] - [DEBUG] [NewPooledConnection:659] [close] com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:659)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.closeMaybeCheckedOut(NewPooledConnection.java:255)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:621)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:1024)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1049)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1010)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1264)
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250355] - [DEBUG] [C3P0PooledConnectionPool:629] [destroyResource] Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250356] - [DEBUG] [BasicResourcePool:1027] [run] Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@155e41f6
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250356] - [DEBUG] [BasicResourcePool:1022] [run] Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@4836e90f
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250356] - [DEBUG] [C3P0PooledConnectionPool:618] [destroyResource] Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@4836e90f
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250356] - [DEBUG] [NewPooledConnection:659] [close] com.mchange.v2.c3p0.impl.NewPooledConnection@4836e90f closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:659)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.closeMaybeCheckedOut(NewPooledConnection.java:255)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:621)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:1024)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1049)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1010)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1264)
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250357] - [DEBUG] [C3P0PooledConnectionPool:629] [destroyResource] Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@4836e90f
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250357] - [DEBUG] [BasicResourcePool:1027] [run] Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@4836e90f
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250357] - [DEBUG] [BasicResourcePool:1022] [run] Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@2b13fb79
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250357] - [DEBUG] [C3P0PooledConnectionPool:618] [destroyResource] Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@2b13fb79
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250358] - [DEBUG] [NewPooledConnection:659] [close] com.mchange.v2.c3p0.impl.NewPooledConnection@2b13fb79 closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:659)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.closeMaybeCheckedOut(NewPooledConnection.java:255)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:621)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:1024)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1049)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1010)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1264)
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250358] - [DEBUG] [C3P0PooledConnectionPool:629] [destroyResource] Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@2b13fb79
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250358] - [DEBUG] [BasicResourcePool:1027] [run] Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@2b13fb79
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250359] - [DEBUG] [BasicResourcePool:1022] [run] Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@6611c4dc
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250359] - [DEBUG] [C3P0PooledConnectionPool:618] [destroyResource] Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@6611c4dc
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250359] - [DEBUG] [NewPooledConnection:659] [close] com.mchange.v2.c3p0.impl.NewPooledConnection@6611c4dc closed by a client.
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:659)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.closeMaybeCheckedOut(NewPooledConnection.java:255)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:621)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:1024)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1049)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1010)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$100(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$5.run(BasicResourcePool.java:1264)
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250360] - [DEBUG] [C3P0PooledConnectionPool:629] [destroyResource] Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@6611c4dc
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250360] - [DEBUG] [BasicResourcePool:1027] [run] Successfully destroyed resource: com.mchange.v2.c3p0.impl.NewPooledConnection@6611c4dc
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250361] - [DEBUG] [BasicResourcePool:1022] [run] Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@3f1b5164
+2017-10-26 16:01:03 [Resource Destroyer in BasicResourcePool.close():250362] - [DEBUG] [C3P0PooledConnectionPool:618] [destroyResource] Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@3f1b5164
