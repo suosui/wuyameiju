@@ -19,6 +19,7 @@ import com.wuyameiju.beans.QueryBean;
 import com.wuyameiju.dao.userDao;
 import com.wuyameiju.entity.user;
 import com.wuyameiju.model.userMd;
+import com.wuyameiju.datasource.*;
 @Repository("UserDaoImpl")
 public class userDaoImpl  implements userDao  {
 	
@@ -26,10 +27,15 @@ public class userDaoImpl  implements userDao  {
 	
 	@Autowired
     private JdbcTemplate jdbcTemplate;
+	
     
+	
+	
+	
 	@Override
 	public Integer save(user entity) {
 		// TODO Auto-generated method stub
+		dynamicDataSource.setCustomerType(dynamicDataSource.DATASOURCE_LOG);
 		String sql = "insert into user(uid,uphone,uname,upass,uregisDate) VALUES(default,?,?,?,default)";
 		KeyHolder keyHolder = new GeneratedKeyHolder();  
 	      int autoIncId = 0;  

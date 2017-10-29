@@ -1,5 +1,2 @@
-/applicationContext.xml
 /com/
-/config.properties
-/dataSource.xml
-/log4j.properties
+/aop.xml

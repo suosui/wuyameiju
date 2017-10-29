@@ -11,8 +11,8 @@ import com.wuyameiju.entity.log;
 import org.aspectj.lang.JoinPoint;    
 import org.aspectj.lang.annotation.*;    
 import org.slf4j.Logger;    
-import org.slf4j.LoggerFactory;    
-   
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;    
 import org.springframework.web.context.request.ServletRequestAttributes;    
 import javax.annotation.Resource;    
@@ -26,9 +26,15 @@ import java.lang.reflect.Method;
  * @since  
  * @version 1.0  
  */    
-@Aspect    
+@Aspect  
+@Component
 public class SystemLogAspect {
-	 //注入Service用于把日志保存数据库    
+	 //注入Service用于把日志保存数据库  
+	public SystemLogAspect() 
+	{
+		System.out.println("***************Systemlog****************");
+		
+	}
     @Resource    
      private logServiceImpl logService;    
     //本地异常日志记录对象    
@@ -36,12 +42,16 @@ public class SystemLogAspect {
     
     //Service层切点    
     @Pointcut("@annotation(com.wuyameiju.annotation.SystemServiceLog)")    
-     public  void serviceAspect() {    
+     public  void serviceAspect() 
+    {    
+    	System.out.println("***************Servicelog****************");
     }    
     
     //Controller层切点    
     @Pointcut("@annotation(com.wuyameiju.annotation.SystemControllerLog)")    
-     public  void controllerAspect() {    
+     public  void controllerAspect() 
+    {    
+    	System.out.println("***************Controllerlog****************");
     }    
     
     /**  

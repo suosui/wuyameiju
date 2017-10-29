@@ -11,25 +11,29 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
+
 
 import com.wuyameiju.beans.PageBean;
 import com.wuyameiju.beans.QueryBean;
 import com.wuyameiju.dao.logDao;
+import com.wuyameiju.datasource.dynamicDataSource;
 import com.wuyameiju.entity.log;
-
+@Repository("LogDaoImpl")
 public class logDaoImpl implements logDao{
 
 	@Autowired
-	@Qualifier("jdbcAppend")
-    private JdbcTemplate jdbcAppend;
+	@Qualifier("jdbcTemplate")
+    private JdbcTemplate jdbcTemplate;
 	
 	@Override
 	public Integer save(log entity) {
 		// TODO Auto-generated method stub
+		dynamicDataSource.setCustomerType(dynamicDataSource.DATASOURCE_LOG);
 		String sql = "insert into log(lid,description,method,requestIp,exceptionCode,createDate,createBy) VALUES(default,?,?,?,?,?,?)";
 		KeyHolder keyHolder = new GeneratedKeyHolder();  
 	      int autoIncId = 0;  
-	      jdbcAppend.update(new PreparedStatementCreator() {  
+	      jdbcTemplate.update(new PreparedStatementCreator() {  
 	        public PreparedStatement createPreparedStatement(Connection con)  
 	                throws SQLException {  
 	            PreparedStatement ps = con.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS); 
